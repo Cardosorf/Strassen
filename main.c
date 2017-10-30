@@ -221,7 +221,7 @@ void strassen(int *A, int *B, int *C, int tam){
     //P7
     sub(A12, A22, S1, n);
     sum(B21, B22, S2, n);
-    strassen(S2, S1, P7, n);
+    strassen(S1, S2, P7, n);
 
     //C11
     sum(P1, P4, C11, n);
